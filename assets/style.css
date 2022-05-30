@@ -28,7 +28,11 @@ h1{
 
 .container__elem{
     text-align: center;
-    padding: 2rem;
+    padding: 3rem 2rem;
+}
+
+.container__elem span{
+    font-size: 1.15rem;
 }
 
 .container__text{

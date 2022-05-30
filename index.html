@@ -6,28 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png">
     <link rel="stylesheet" href="./assets/style.css">
-    <script type="text/javascript" src="./assets/main.js"></script>
-    <title>2023 Year Count</title>
+    <title>Отсчет до 2023 года</title>
 </head>
 <body>
-    <h1>Til 2023 year left:</h1>
+    <h1>До 2023 Года осталось:</h1>
     <div class="container">
         <div class="container__elem">
             <div class="container__text" id="days">0</div>
-            <div>Days</div>
+            <span>Дней</span>
         </div>
         <div class="container__elem">
             <div class="container__text" id="hours">0</div>
-            <div>Hours</div>
+            <span>Часов</span>
         </div>
         <div class="container__elem">
             <div class="container__text" id="mins">0</div>
-            <div>Mins</div>
+            <span>Минут</span>
         </div>
         <div class="container__elem">
             <div class="container__text" id="secs">0</div>
-            <div>Secs</div>
+            <span>Секунд</span>
         </div>
     </div>
+
+
+    <!-- скрипт добавляем в самом конце, иначе getElementById вернет значение null -->
+    <script type="text/javascript" src="./assets/main.js"></script>
 </body>
 </html>
