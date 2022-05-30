@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Arial", sans-serif;
+    background: url(./images/background.jpg) 0 0/100% auto no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1,div{
+    color: #fff;
+}
+
+h1{
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container__elem{
+    text-align: center;
+    padding: 2rem;
+}
+
+.container__text{
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1;
+}
