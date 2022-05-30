@@ -12,19 +12,24 @@ function count(){
     const currentDate = new Date();
     // Вычисляем общее количество секунд
     const totalSeconds = (newYearsDate - currentDate) / 1000;
-
-    // Вычисляем дни, часы, минуты и секунды
-    const Days = Math.floor(totalSeconds / 3600 / 24);
-    const Hours = Math.floor(totalSeconds / 3600) % 24;
-    const Mins = Math.floor(totalSeconds / 60) % 60;
-    const Secs = Math.floor(totalSeconds) % 60;
-
     
-    // Подставляем зполученные значения в html
-    daysEl.innerHTML = Days;
-    hoursEl.innerHTML = formatTime(Hours);
-    minsEl.innerHTML = formatTime(Mins);
-    secsEl.innerHTML = formatTime(Secs);
+    if(totalSeconds <= 0){
+        document.getElementById('label').innerHTML = "Новый 2023 Год настал!";
+        return;
+    } else{
+        // Вычисляем дни, часы, минуты и секунды
+        const Days = Math.floor(totalSeconds / 3600 / 24);
+        const Hours = Math.floor(totalSeconds / 3600) % 24;
+        const Mins = Math.floor(totalSeconds / 60) % 60;
+        const Secs = Math.floor(totalSeconds) % 60;
+    
+        
+        // Подставляем зполученные значения в html
+        daysEl.innerHTML = Days;
+        hoursEl.innerHTML = formatTime(Hours);
+        minsEl.innerHTML = formatTime(Mins);
+        secsEl.innerHTML = formatTime(Secs);
+    }
 }
 
 function formatTime(time){
