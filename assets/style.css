@@ -1,13 +1,44 @@
 *{
     box-sizing: border-box;
+}
+
+body{
+    font-family: "Arial",sans-serif;
+    font-weight: bold;
     margin: 0;
-    padding: 0 20px;
+    padding: 0;
+    background-image: url(../assets/images/background_small.jpg);
+    background-size: cover;
+}
+
+div{
+    color: #fff;
+}
+
+.label{
+    font-size: 3rem;
+}
+
+.card__label{
+    font-size: 2rem;
+}
+
+.card__count{
+    font-size: 5rem;
 }
 
 .container{
-    max-width: 100%;
-    border: 1px solid #000;
-    margin: 0 20px;
+    min-width: 500px;
+    padding-top: 2rem;
+}
+
+.label, .card-area, .card, .card__count{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.label, .card-area{
+    padding: 20px;
 }
 
 @media only screen and (min-width: 768px){
