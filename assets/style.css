@@ -1,3 +1,5 @@
+@import url('/assets/col.css');
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,9 +11,8 @@ body{
     background: url(./images/background.jpg) 0 0/100% auto repeat;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    /*flex-direction: column;*/
     justify-content: center;
-    min-width: 500px;
 }
 
 h1,div{
@@ -26,7 +27,12 @@ h1{
     justify-content: center;
 }
 
+.text{
+    text-align: center;
+}
+
 .container{
+    max-width: 1100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -34,7 +40,7 @@ h1{
 
 .container__elem{
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 3rem 1.15rem;
 }
 
 .container__elem span{
@@ -45,4 +51,10 @@ h1{
     font-size: 6rem;
     font-weight: bold;
     line-height: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .col-xs{
+        width: 100%;
+    }
 }
