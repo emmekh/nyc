@@ -53,8 +53,25 @@ h1{
     line-height: 1;
 }
 
-@media only screen and (max-width: 768px) {
-    .col-xs{
-        width: 100%;
+@media only screen and (max-width: 743px) {
+    .col-xs-6 {width: 50%;}
+    .col-xs-12{width: 100%;}
+    body{
+        background-image: url(./images/background_small.jpg) auto;
+        background-size: cover;
+        background-position: center;
+    }
+    .container__text{
+        font-size: 6rem;
+        font-weight: bold;
+        line-height: 1;
+    }
+    .container__elem{
+        text-align: center;
+        padding: 3rem .1rem;
+    }
+    h1{
+        font-size: 3rem;
+        margin-top: 2rem;
     }
 }
