@@ -1,5 +1,5 @@
 // Устанавливаем дату до окончания отсчета
-const newYear = '1 Jan 2023';
+const newYear = '1 Jan 2024';
 
 // Обращаемся к элементам
 const daysEl = document.getElementById('days');
@@ -14,7 +14,7 @@ function count(){
     const totalSeconds = (newYearsDate - currentDate) / 1000;
     
     if(totalSeconds <= 0){
-        document.getElementById('label').innerHTML = "Новый 2023 Год настал!";
+        document.getElementById('label').innerHTML = "Новый 2024 Год настал!";
         return;
     } else{
         // Вычисляем дни, часы, минуты и секунды
