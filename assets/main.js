@@ -14,7 +14,7 @@ function count(){
     const totalSeconds = (newYearsDate - currentDate) / 1000;
     
     if(totalSeconds <= 0){
-        document.getElementById('label').innerHTML = "Новый 2024 Год настал!";
+        document.getElementById('label').innerHTML = "Новый 2024 Год настал!!!";
         return;
     } else{
         // Вычисляем дни, часы, минуты и секунды
