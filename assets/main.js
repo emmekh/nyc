@@ -1,5 +1,5 @@
 // Устанавливаем дату до окончания отсчета
-const newYear = '1 Jan 2024';
+const newYear = '1 Jan 2025';
 
 // Обращаемся к элементам
 const daysEl = document.getElementById('days');
